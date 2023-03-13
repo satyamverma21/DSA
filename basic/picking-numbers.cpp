@@ -33,26 +33,32 @@ int pickingNumbers(vector<int> a)
     return max;
 }
 
-// int pickingNumbers(vector<int> a) {
+// int pickingNumbers(vector<int> a)
+// {
 
-// sort(a.begin() , a.end()) ;
-//  vector<int>::iterator it =(a.begin()) ;
-//  int temp = *it ;
-//  it++ ;
-//  int max = 1 ;
-//  int counter =1  ;
-//  while(it!=a.end())
-//  {
-//      if( *it==temp || abs(temp - *it)==1){counter++ ; cout<<*it ; }
-//      else {counter = 1 ;
-//      temp = *it ;  }
-//      it++  ;
+//     sort(a.begin(), a.end());
+//     vector<int>::iterator it = (a.begin());
+//     int temp = *it;
+//     it++;
+//     int max = 1;
+//     int counter = 1;
+//     while (it != a.end())
+//     {
+//         if (*it == temp || abs(temp - *it) == 1)
+//         {
+//             counter++;
+//             cout << *it;
+//         }
+//         else
+//         {
+//             counter = 1;
+//             temp = *it;
+//         }
+//         it++;
 
-//     max = std::max(max, counter) ;
-
-//  }
-//  return max ;
-
+//         max = std::max(max, counter);
+//     }
+//     return max;
 // }
 
 int main()
