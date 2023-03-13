@@ -13,53 +13,53 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY a as parameter.
  */
 
-int pickingNumbers(vector<int> a)
-{
-    sort(a.begin(), a.end());
-    int counter = 1, max = 1, temp = a[0];
+// int pickingNumbers(vector<int> a)
+// {
+//     sort(a.begin(), a.end());
+//     int counter = 1, max = 1, temp = a[0];
 
-    for (int i = 1; i < a.size(); i++)
-    {
-        if (a[i] == temp || abs(a[i] - temp) == 1)
-            counter++;
-        else
-        {
-            counter = 1;
-            temp = a[i];
-        }
-        max = std::max(max, counter);
-    }
+//     for (int i = 1; i < a.size(); i++)
+//     {
+//         if (a[i] == temp || abs(a[i] - temp) == 1)
+//             counter++;
+//         else
+//         {
+//             counter = 1;
+//             temp = a[i];
+//         }
+//         max = std::max(max, counter);
+//     }
 
-    return max;
-}
+//     return max;
+// }
 
 // int pickingNumbers(vector<int> a)
 // {
 
-//     sort(a.begin(), a.end());
-//     vector<int>::iterator it = (a.begin());
-//     int temp = *it;
-//     it++;
-//     int max = 1;
-//     int counter = 1;
-//     while (it != a.end())
-//     {
-//         if (*it == temp || abs(temp - *it) == 1)
-//         {
-//             counter++;
-//             cout << *it;
-//         }
-//         else
-//         {
-//             counter = 1;
-//             temp = *it;
-//         }
-//         it++;
+    sort(a.begin(), a.end());
+    vector<int>::iterator it = (a.begin());
+    int temp = *it;
+    it++;
+    int max = 1;
+    int counter = 1;
+    while (it != a.end())
+    {
+        if (*it == temp || abs(temp - *it) == 1)
+        {
+            counter++;
+            cout << *it;
+        }
+        else
+        {
+            counter = 1;
+            temp = *it;
+        }
+        it++;
 
-//         max = std::max(max, counter);
-//     }
-//     return max;
-// }
+        max = std::max(max, counter);
+    }
+    return max;
+}
 
 int main()
 {
